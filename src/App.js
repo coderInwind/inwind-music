@@ -1,5 +1,21 @@
-import React from "react";
+import React, { memo } from "react";
+import { HashRouter } from "react-router-dom";
+import { renderRoutes } from "react-router-config";
+import { Provider } from "react-redux";
 
-export default function App() {
-  return <div>App</div>;
-}
+import Footer from "@/components/app-footer";
+import Header from "@/components/app-header";
+import routes from "@/router/index";
+import store from "@/store/index";
+
+export default memo(function App() {
+  return (
+    <Provider store={store}>
+      <HashRouter>
+        <Header />
+        {renderRoutes(routes)}
+        <Footer />
+      </HashRouter>
+    </Provider>
+  );
+});
