@@ -1,0 +1,19 @@
+@import "~normalize.css";
+@import "~antd/dist/antd.css";
+
+.sprite01 {
+  background: url(@/assets/img/topbar.png) no-repeat 0 9999px;
+}
+
+.sprite02 {
+  background: url(@/assets/img/foot_enter.png) no-repeat 0 9999px;
+  background-size: 110px 552px;
+}
+
+.sprite03 {
+  background: url(@/assets/img/download.png) no-repeat 0 0;
+}
+
+.btn {
+  background: url(@/assets/img/banner.png) no-repeat 0 9999px;
+}
