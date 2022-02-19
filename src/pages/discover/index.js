@@ -5,7 +5,7 @@ import { DiscoverWrapper, TopMenu } from "./style";
 import { NavLink } from "react-router-dom";
 import { renderRoutes } from "react-router-config";
 
-export default memo(function Discover(props) {
+const Discover = function Discover(props) {
   //props里会有当前路由的routes
   const { route } = props;
   return (
@@ -25,4 +25,5 @@ export default memo(function Discover(props) {
       {renderRoutes(route.routes)}
     </DiscoverWrapper>
   );
-});
+};
+export default memo(Discover);

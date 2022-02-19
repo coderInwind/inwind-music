@@ -36,23 +36,23 @@ export default memo(function Footer() {
         <div className="right">
           <ul className="right-icon">
             <li>
-              <a href="/#" className="logo1 sprite02"></a>
+              <a href="/#" className="logo1 sprite-footer"></a>
               <span>Amoed Studio</span>
             </li>
             <li>
-              <a href="/#" className="logo2 sprite02"></a>
+              <a href="/#" className="logo2 sprite-footer"></a>
               <span>用户认证</span>
             </li>
             <li>
-              <a href="/#" className="logo3 sprite02"></a>
+              <a href="/#" className="logo3 sprite-footer"></a>
               <span>独立音乐人</span>
             </li>
             <li>
-              <a href="/#" className="logo4 sprite02"></a>
+              <a href="/#" className="logo4 sprite-footer"></a>
               <span>赞赏</span>
             </li>
             <li>
-              <a href="/#" className="logo5 sprite02"></a>
+              <a href="/#" className="logo5 sprite-footer"></a>
               <span>视频奖励</span>
             </li>
           </ul>

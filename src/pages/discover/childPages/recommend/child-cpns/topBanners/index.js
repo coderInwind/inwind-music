@@ -23,9 +23,6 @@ function TopBanners() {
   const bannerRef = useRef();
   const [currentIndex, setcurrentIndex] = useState(0);
 
-  useEffect(() => {
-    console.log(topBanners);
-  });
   //派发action
   const dispatch = useDispatch();
   useEffect(() => {
@@ -56,7 +53,7 @@ function TopBanners() {
           </Carousel>
         </div>
         <div className="right">
-          <div className="sprite03 download"></div>
+          <div className="sprite-download download"></div>
         </div>
         <div className="btn btnleft" onClick={(e) => bannerRef.current.prev()}></div>
         <div className="btn btnright" onClick={(e) => bannerRef.current.next()}></div>

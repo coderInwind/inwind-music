@@ -5,15 +5,27 @@
   background: url(@/assets/img/topbar.png) no-repeat 0 9999px;
 }
 
-.sprite02 {
+.sprite-footer {
   background: url(@/assets/img/foot_enter.png) no-repeat 0 9999px;
   background-size: 110px 552px;
 }
 
-.sprite03 {
+.sprite-download {
   background: url(@/assets/img/download.png) no-repeat 0 0;
 }
 
 .btn {
   background: url(@/assets/img/banner.png) no-repeat 0 9999px;
+}
+
+.sprite-index {
+  background: url(@/assets/img/index.png) no-repeat 0 9999px;
+}
+
+.sprite-coverall {
+  background: url(@/assets/img/coverall.png) no-repeat;
+}
+
+.sprite-iconall {
+  background: url(@/assets/img/iconall.png) no-repeat;
 }
