@@ -24,8 +24,17 @@
 
 .sprite-coverall {
   background: url(@/assets/img/coverall.png) no-repeat;
+  position: absolute;
 }
 
 .sprite-iconall {
   background: url(@/assets/img/iconall.png) no-repeat;
+}
+
+.index_bill {
+  background: url(@/assets/img/index_bill.png) no-repeat;
+}
+
+.icon-sprite {
+  background: url(@/assets/img/icon.png) no-repeat 0 9999px;
 }

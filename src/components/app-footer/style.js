@@ -33,6 +33,7 @@ export const FooterWrapper = styled.div`
       }
       .bottom-info2 {
         display: flex;
+
         justify-content: space-around;
       }
       .bottom-info3 {

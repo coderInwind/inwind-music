@@ -2,6 +2,7 @@ import React, { memo, useEffect } from "react";
 import { useDispatch, useSelector, shallowEqual } from "react-redux";
 import { HotRecommendWrapper } from "./style";
 import { getHotRecommendAction } from "../../../../store/actionCreators";
+import ThemeHeaderRcm from "@/components/theme-header-rcm/index";
 import SongCover from "@/components/song-cover";
 
 const HotRecommend = function HotRecommend() {
@@ -19,15 +20,18 @@ const HotRecommend = function HotRecommend() {
     dispatch(getHotRecommendAction(8));
   }, [dispatch]);
 
-  useEffect(() => {
-    console.log(hotRecommends);
-  });
-
   return (
     <HotRecommendWrapper>
-      {hotRecommends.map((item) => {
-        return <SongCover recommendItem={item} key={item.id}></SongCover>;
-      })}
+      <ThemeHeaderRcm
+        title={"热门推荐"}
+        tabs={["华语", "热门", "摇滚", "民谣", "电子"]}
+        more={"更多"}
+      ></ThemeHeaderRcm>
+      <div className="list">
+        {hotRecommends.map((item) => {
+          return <SongCover recommendItem={item} key={item.id}></SongCover>;
+        })}
+      </div>
     </HotRecommendWrapper>
   );
 };
